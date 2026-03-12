@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FBD163"
+    tools:context=".SignupActivity">
+
+    <!-- Background Image -->
+
+    <!-- Signup Title -->
+
+    <!-- Form Container with Light Grey Background -->
+
+    <ImageView
+        android:id="@+id/headerImage"
+        android:layout_width="420dp"
+        android:layout_height="224dp"
+        android:alpha="1.0"
+        android:scaleType="centerCrop"
+        android:src="@drawable/food_header"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-5dp" />
+
+    <TextView
+        android:id="@+id/signupTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Sign Up"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.214"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/headerImage" />
+
+    <LinearLayout
+        android:id="@+id/formContainer"
+        android:layout_width="311dp"
+        android:layout_height="332dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/rounded_grey_bg"
+        android:orientation="vertical"
+        android:padding="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/signupTitle">
+
+        <!-- Email Input -->
+        <EditText
+            android:id="@+id/emailInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/input_highlighted"
+            android:elevation="2dp"
+            android:hint="Email"
+            android:padding="12dp"
+            android:textSize="16sp" />
+
+        <!-- Password Input -->
+        <EditText
+            android:id="@+id/passwordInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/input_highlighted"
+            android:elevation="2dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="12dp"
+            android:textSize="16sp" />
+
+        <!-- Name Input -->
+        <EditText
+            android:id="@+id/nameInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/input_highlighted"
+            android:elevation="2dp"
+            android:hint="Name"
+            android:padding="12dp"
+            android:textSize="16sp" />
+
+        <!-- University Email Input -->
+        <EditText
+            android:id="@+id/uniEmailInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/input_highlighted"
+            android:elevation="2dp"
+            android:hint="University email"
+            android:padding="12dp"
+            android:textSize="16sp" />
+
+        <!-- Student ID Input -->
+        <EditText
+            android:id="@+id/studentIdInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/input_highlighted"
+            android:elevation="2dp"
+            android:hint="Student ID"
+            android:padding="12dp"
+            android:textSize="16sp" />
+
+        <!-- Upgrade Plan Button -->
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button2"
+        style="@style/Widget.Material3.Button.IconButton.Filled.Tonal"
+        android:layout_width="295dp"
+        android:layout_height="52dp"
+        android:backgroundTint="#A49C9C"
+        android:fontFamily="sans-serif-black"
+        android:text="Join"
+        android:textColor="#070606"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="58dp"
+        tools:layout_editor_absoluteY="631dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="317dp"
+        android:layout_height="63dp"
+        android:fontFamily="@font/bowlby_one"
+        android:text="Discover"
+        android:textColor="#090404"
+        android:textSize="48sp"
+        tools:layout_editor_absoluteX="70dp"
+        tools:layout_editor_absoluteY="69dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="39dp"
+        android:layout_height="31dp"
+        app:srcCompat="@drawable/ic_hangouts"
+        tools:layout_editor_absoluteX="314dp"
+        tools:layout_editor_absoluteY="237dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="145dp"
+        android:layout_height="61dp"
+        android:fontFamily="@font/bowlby_one"
+        android:text="Eats"
+        android:textColor="#090505"
+        android:textSize="48sp"
+        tools:layout_editor_absoluteX="133dp"
+        tools:layout_editor_absoluteY="132dp" />
+
+    <!-- Join Button -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

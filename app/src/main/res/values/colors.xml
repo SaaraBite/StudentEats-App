@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+        <color name="light_grey">#E0E0E0</color>  <!-- More visible grey -->
+        <color name="black">#000000</color>
+    <color name="nav_icon_color">#0E0D0D</color>
+    <color name="nav_text_color">#E1DAD9</color>
+    <color name="white" />
+    <color name="gray">#181717</color>
+
+</resources>

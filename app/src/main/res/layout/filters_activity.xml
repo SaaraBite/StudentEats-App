@@ -1,0 +1,300 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F8F8"
+    android:backgroundTint="#FBD163"
+    tools:context=".FiltersActivity"
+    tools:ignore="ExtraText">
+
+    <!-- Main Content Wrapped in LinearLayout -->
+
+    <!-- Fixed Bottom Navigation Bar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="727dp"
+        android:layout_above="@id/bottomNav"
+        android:layout_marginBottom="-52dp"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Top Navigation Bar -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/backButton"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/ic_arrow_back"
+                app:tint="#000000" />
+
+        </RelativeLayout>
+
+        <!-- Campus Area Selection -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="sans-serif-black"
+            android:text="Campus area"
+            android:textColor="#444444"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="355dp"
+            android:layout_height="71dp"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <Button
+                style="@style/Widget.Material3.Button.IconButton.Filled.Tonal"
+                android:layout_width="44dp"
+                android:layout_height="63dp"
+                android:layout_weight="1"
+                android:backgroundTint="#F6EEEE"
+                android:fontFamily="sans-serif-black"
+                android:text="Use current location"
+                android:textAllCaps="false"
+                android:textColor="#090808"
+                android:textSize="14sp" />
+
+            <Button
+                style="@style/Widget.Material3.Button.IconButton.Filled.Tonal"
+                android:layout_width="3dp"
+                android:layout_height="64dp"
+                android:layout_weight="1"
+                android:backgroundTint="#F6EEEE"
+                android:fontFamily="sans-serif-black"
+                android:text="Search for area"
+                android:textColor="#100909"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <!-- Select Date -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="sans-serif-black"
+            android:text="Select date"
+            android:textColor="#444444"
+            android:textSize="16sp" />
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:columnCount="3">
+
+            <Button
+                style="@style/Widget.Material3.Button.IconButton.Filled.Tonal"
+                android:layout_width="108dp"
+                android:layout_height="match_parent"
+                android:backgroundTint="#F6EEEE"
+                android:fontFamily="sans-serif-black"
+                android:text="Today"
+                android:textColor="#0D0808"
+                android:textSize="14sp" />
+
+            <Button
+                style="@style/Widget.Material3.Button.IconButton.Filled.Tonal"
+                android:layout_width="116dp"
+                android:backgroundTint="#F6EEEE"
+                android:fontFamily="sans-serif-black"
+                android:text="Tomorrow"
+                android:textColor="#1A0D0D"
+                android:textSize="14sp" />
+
+            <Button
+                style="@style/Widget.Material3.Button.IconButton.Filled.Tonal"
+                android:layout_width="116dp"
+                android:backgroundTint="#F6EEEE"
+                android:fontFamily="sans-serif-black"
+                android:text="This Week"
+                android:textColor="#180D0D"
+                android:textSize="14sp" />
+        </GridLayout>
+
+        <!-- Time of Day Selection -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="sans-serif-black"
+            android:text="Time of day"
+            android:textColor="#444444"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <Button
+                style="@style/Widget.Material3.Button.IconButton.Filled.Tonal"
+                android:layout_width="16dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#F6EEEE"
+                android:fontFamily="sans-serif-black"
+                android:text="Day"
+                android:textColor="#050505"
+                android:textSize="14sp" />
+
+            <Button
+                style="@style/Widget.Material3.Button.IconButton.Filled.Tonal"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#F6EEEE"
+                android:fontFamily="sans-serif-black"
+                android:text="Night"
+                android:textColor="#120E0E"
+                android:textSize="14sp" />
+
+            <Button
+                style="@style/Widget.Material3.Button.IconButton.Filled.Tonal"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="#F6EEEE"
+                android:fontFamily="sans-serif-black"
+                android:text="Select time"
+                android:textColor="#0D0A0A"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <!-- Budget Range Slider -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="sans-serif-black"
+            android:text="Budget (Rs10 - Rs2500)"
+            android:textColor="#444444"
+            android:textSize="16sp" />
+
+        <!-- Food Categories -->
+        <SeekBar
+            android:layout_width="369dp"
+            android:layout_height="31dp"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="#DB2020"
+            android:max="250"
+            android:progress="50"
+            android:progressTint="#E0E0E0"
+            android:thumbTint="#000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="sans-serif-black"
+            android:text="Food categories"
+            android:textColor="#444444"
+            android:textSize="16sp" />
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    style="@style/Widget.Material3.Button.IconButton.Filled.Tonal"
+                    android:layout_width="113dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#F6EEEE"
+                    android:fontFamily="sans-serif-black"
+                    android:text="Restaurants"
+                    android:textAllCaps="false"
+                    android:textColor="#121111"
+                    android:textSize="14sp" />
+
+                <Button
+                    style="@style/Widget.Material3.Button.IconButton.Filled.Tonal"
+                    android:layout_width="99dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#F6EEEE"
+                    android:fontFamily="sans-serif-black"
+                    android:text="Deals"
+                    android:textAllCaps="false"
+                    android:textColor="#050404"
+                    android:textColorLink="#C7BFBF"
+                    android:textSize="14sp" />
+
+                <Button
+                    style="@style/Widget.Material3.Button.IconButton.Filled.Tonal"
+                    android:layout_width="103dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#F6EEEE"
+                    android:fontFamily="sans-serif-black"
+                    android:text="Discounts"
+                    android:textColor="#0F0D0D"
+                    android:textColorHint="#0F0D0D"
+                    android:textColorLink="#0D0C0C"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <!-- Bottom Buttons -->
+        <LinearLayout
+            android:layout_width="339dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+
+            <Button
+                style="@style/Widget.Material3.Button.IconButton.Filled.Tonal"
+                android:layout_width="163dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="#F6EEEE"
+                android:fontFamily="sans-serif-black"
+                android:text="Reset"
+                android:textAllCaps="false"
+                android:textColor="#1B1515"
+                android:textSize="14sp" />
+
+            <Button
+                style="@style/Widget.Material3.Button.IconButton.Filled.Tonal"
+                android:layout_width="63dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="#F6EEEE"
+                android:fontFamily="sans-serif-black"
+                android:text="Apply Filters"
+                android:textColor="#120F0F"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNav"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/black"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:fitsSystemWindows="false"
+        android:padding="0dp"
+        app:itemIconTint="@color/nav_icon_color"
+        app:itemPaddingBottom="0dp"
+        app:itemPaddingTop="0dp"
+        app:itemTextColor="@color/nav_text_color"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/bottom_nav_menu" />
+
+</RelativeLayout>

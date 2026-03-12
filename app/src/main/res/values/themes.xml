@@ -1,0 +1,6 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Theme.StudentEats" parent="Theme.MaterialComponents.Light">
+        <item name="android:colorBackground">#F8F8F8</item> <!-- Change background color -->
+        <item name="android:textColorPrimary">#000000</item> <!-- Ensures text is black -->
+    </style>
+</resources>
